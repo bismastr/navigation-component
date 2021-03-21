@@ -30,7 +30,11 @@
         android:id="@+id/profielActivity"
         android:name="com.example.navigation_android.ProfielActivity"
         android:label="activity_profiel"
-        tools:layout="@layout/activity_profiel" />
+        tools:layout="@layout/activity_profiel">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.dicoding.com/profile" />
+    </activity>
     <fragment
         android:id="@+id/detailCategoryFragment"
         android:name="com.example.navigation_android.DetailCategoryFragment"
