@@ -15,7 +15,10 @@
             app:destination="@id/profielActivity" />
         <action
             android:id="@+id/action_homeFragment_to_categoryFragment"
-            app:destination="@id/categoryFragment" />
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false" />
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
@@ -51,5 +54,11 @@
         <deepLink
             android:id="@+id/deepLink3"
             app:uri="https://www.dicoding.com/detail/{name}" />
+        <action
+            android:id="@+id/action_detailCategoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
